@@ -29,7 +29,7 @@ router.get('/impressum', function(req, res, next) {
     
     'Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: DE 123456789\n<br>'+
     
-    'Inhaltlich Verantwortlicher gem. § 55 II RStV: pStream Media corp. (Bahamas 123)'
+    'Inhaltlich Verantwortlicher gem. § 55 II RStV: Paul Finkbeiner Co-Founder PM Software Factory'
   });
 });
 

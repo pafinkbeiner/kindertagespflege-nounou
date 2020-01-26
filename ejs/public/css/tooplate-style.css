@@ -268,47 +268,47 @@ ul.cd-hero-slider {
 }
 
 .first-service .icon {
-	background-image: url(../img/first-service-main.png);
+	background-image: url(../img/uhr.png);
 	height: 32px;
 	width: 32px;
 	display: inline-block;
 }
 
 .first-service:hover .icon {
-	background-image: url(../img/first-service-white.png);
+	background-image: url(../img/uhr.png);
 }
 
 .second-service .icon {
-	background-image: url(../img/second-service-main.png);
+	background-image: url(../img/farbe.png);
 	height: 32px;
 	width: 22px;
 	display: inline-block;
 }
 
 .second-service:hover .icon {
-	background-image: url(../img/second-service-white.png);
+	background-image: url(../img/farbe.png);
 }
 
 .third-service .icon {
-	background-image: url(../img/third-service-main.png);
+	background-image: url(../img/kind.png);
 	height: 32px;
 	width: 32px;
 	display: inline-block;
 }
 
 .third-service:hover .icon {
-	background-image: url(../img/third-service-white.png);
+	background-image: url(../img/kind.png);
 }
 
 .fourth-service .icon {
-	background-image: url(../img/fourth-service-main.png);
+	background-image: url(../img/papier.png);
 	height: 32px;
 	width: 32px;
 	display: inline-block;
 }
 
 .fourth-service:hover .icon {
-	background-image: url(../img/fourth-service-white.png);
+	background-image: url(../img/papier.png);
 }
 
 

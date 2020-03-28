@@ -2,6 +2,37 @@ var express = require('express');
 var fs = require('fs');
 var router = express.Router();
 
+router.get('/tagesablauf', function(req, res, next) {
+  res.render('tagesablauf',
+  { 
+      title: 'Kindertagespflege Nounou',
+      description: 'Kindertagespflege Freudenstadt' 
+  })
+});
+
+router.get('/bastelnundmalen', function(req, res, next) {
+  res.render('bastelnundmalen',
+  { 
+      title: 'Kindertagespflege Nounou',
+      description: 'Kindertagespflege Freudenstadt' 
+  })
+});
+
+router.get('/eingewoehungsphase', function(req, res, next) {
+  res.render('eingewoehungsphase',
+  { 
+      title: 'Kindertagespflege Nounou',
+      description: 'Kindertagespflege Freudenstadt' 
+  })
+});
+
+router.get('/konzeption', function(req, res, next) {
+  res.render('konzeption',
+  { 
+      title: 'Kindertagespflege Nounou',
+      description: 'Kindertagespflege Freudenstadt' 
+  })
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -29,7 +60,9 @@ router.get('/impressum', function(req, res, next) {
     
     'Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: DE 123456789\n<br>'+
     
-    'Inhaltlich Verantwortlicher gem. § 55 II RStV: Paul Finkbeiner Co-Founder PM Software Factory'
+    'Inhaltlich Verantwortlicher gem. § 55 II RStV: Paul Finkbeiner Co-Founder PM Software Factory',
+    title: 'Kindertagespflege Nounou',
+    description: 'Kindertagespflege Freudenstadt' 
   });
 });
 

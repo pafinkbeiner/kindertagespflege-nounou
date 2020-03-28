@@ -1,0 +1,15 @@
+@import '../src/variables.scss';
+
+/*
+* Overall style changes on the website
+*/
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

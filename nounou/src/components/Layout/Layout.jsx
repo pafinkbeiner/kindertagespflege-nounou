@@ -17,7 +17,7 @@ import '../Layout/Layout.scss'
 const Layout = () => {
     return (
         <Router>
-            <div>
+            <div className="container">
                 <Navbar/>
                 <div class="content-container">
                     <Route exact path="/" component={Main}/>

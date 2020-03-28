@@ -7,19 +7,32 @@ import logo from '../Navbar/logo.png';
 //SCSS
 import '../Navbar/Navbar.scss';
 
+const NavbarContent = [
+    {
+        name: "Home",
+        path: "/Home"
+    },
+    {
+        name: "Über mich",
+        path: "/About"
+    },
+    {
+        name: "Über mich",
+        path: "/About"
+    }
+]
+
 const Navbar = () => {
     return (
         <nav className="nav-container">
 
-            <Link className="logo-link" to="Gemeinde">
+            <Link className="logo-link" to="Home">
                 <img className="logo" src={logo} alt="logo"/>
             </Link>
 
-                <Link className="navbar-item" to="Gemeinde">Home</Link>
-                <Link className="navbar-item" to="Aktuell">Aktuell</Link>
-                <Link className="navbar-item" to="Gemeindebrief">Gemeindebrief</Link>
-                <Link className="navbar-item" to="GoodNews">Good News</Link>
-                <Link className="navbar-item" to="Geschichte">Geschichte</Link>
+            {NavbarContent.map(item => {
+                return <Link className="navbar-item" to={item.path}>{item.name}</Link>
+            })}
 
         </nav>
     )

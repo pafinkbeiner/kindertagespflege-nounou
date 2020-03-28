@@ -17,8 +17,16 @@ const NavbarContent = [
         path: "/About"
     },
     {
-        name: "Über mich",
-        path: "/About"
+        name: "Räumlichkeiten",
+        path: "/Rooms"
+    },
+    {
+        name: "Tagesablauf",
+        path: "/Day"
+    },
+    {
+        name: "Kontakt",
+        path: "/Contact"
     }
 ]
 

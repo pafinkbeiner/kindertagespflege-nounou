@@ -5,7 +5,23 @@ import './Home.scss';
 
 class Home extends React.Component {
 
-    sideNavContent = ["Home", "Fortbildungen", "Gruppen", "Betreuungsanspruch", "Räumlichkeiten", "Ausstattung"];
+    sideNavContent = [
+        "Home", 
+        "Fortbildungen", 
+        "Gruppen", 
+        "Betreuungsanspruch", 
+        "Räumlichkeiten", 
+        "Ausstattung", 
+        "Tagesablauf", 
+        "Beobachten", 
+        "Regeln", 
+        "Eingewöhnung & Abschied", 
+        "Medikamenteneinnahme", 
+        "Zusammenarbeit mit den Eltern",
+        "Urlaub / Krankheitsfall",
+        "Schlafen",
+        "Allgemeines"
+    ];
 
     state = {
         page: "Home"
@@ -186,13 +202,216 @@ class Home extends React.Component {
 
                         {
                             this.state.page === "Ausstattung" && (
-                                <div>hallo dies ist eine Test1</div>
+                                <div>
+                                    <h5>Ausstattung</h5>
+
+                                    Zunächst mal zu unserem Fuhrpark. Es stehen verschiedenste Kinderwägen zur Verfügung.
+                                    Buggy: wenn mal nur noch ein Kind da ist, dass noch nicht so gut zu Fuß unterwegs ist.
+
+                                    Baby-/Kinderwagen: Babywanne dient uns oft als Kuschelnest für die Kleinsten innerhalb der Wohnung. 
+                                    Ansonsten ist der Wagen mit Schwenkrädern sehr gut fahrbar -auch einhändig-, so dass immer auch ein Kind an meiner Hand laufen kann. 
+                                    Die anderen Kinder haben ca. 40 cm lange Gummischlaufen, an denen sie sich am Wagen festhalten
+
+                                    Zwillingswagen: je nach Bedarf nehmen wir auch diesen Wagen, 
+                                    wenn noch nicht alle Kinder sicher laufen können oder wir einen längeren Ausflug vorhaben, damit ein Notsitz vorhanden ist. 
+                                    Auch dieser Wagen hat die Gummibänder zum Festhalten.
+
+                                    Vierlingswagen: Dieser kommt nur selten zum Einsatz. Mir ist es wichtig, dass sich die Kinder bewegen und nicht nur chauffiert werden. 
+                                    Deshalb wartet er meist in der Garage...
+
+                                    Auto/Bus: Wir haben einen großen Familienbus mit 8 Sitzen, der für Ausflüge, Einkäufe oder Hol- und Bringefahrten der Kinder zur Verfügung steht. 
+                                    Solche Fahrten sind aber begrenzt, da wir uns lieber selbst an der frischen Luft bewegen
+
+                                    Ansonsten bietet die Wohnung -fast- alles, was man für die Kinderbetreuung benötigt. 
+                                    So sind ausreichend Sitzgelegenheiten, Spielsachen, Bilderbücher, Bettchen, Töpfchen und Geschirr vorhanden.
+
+                                </div>
                             )
                         }
 
                         {
-                            this.state.page === "Test1" && (
-                                <div>hallo dies ist eine Test1</div>
+                            this.state.page === "Tagesablauf" && (
+                                <div>
+                                    <h5>Die Wichtigkeit eines strukturierten Tagesablaufs</h5>
+
+                                    Für die Entwicklung des Kindes sind wiederkehrende Muster und strukturierte Tagesabläufe wichtig. 
+                                    Neben flexiblen Zeiten für freies Spielen und Toben nimmt das gemeinsame Essen in der Gruppe eine wesentliche Funktion ein. 
+                                    Wichtige Rituale wie Händewaschen, Sitzkreis und Mittagsschlaf haben dabei ihren festen Platz und bilden wiederkehrende Muster 
+                                    in der ansonsten vielseitig gestalteten Tagesplanung.
+                                    Die aktive Einbindung des Kindes in die Tagesgestaltung sorgt dafür, 
+                                    dass Ausflüge in die Natur oder ähnliches in der Gruppe für große Vorfreude sorgen. 
+                                    Dabei fließen die Jahreszeiten und die verschiedenen Witterungen selbstverständlich in die Planungen ein. 
+                                    Denn durch sie ergeben sich immer neue Entdeckungs- und Lernschwerpunkte, was dem Kind vielfältige Eindrücke und Erfahrungen bietet.
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Beobachten" && (
+                                <div>
+                                    <h5>Beobachten und Dokumentieren</h5>
+                                    Beobachtungen sind ein wichtiger Bestandteil meiner Arbeit, da ich einen gesellschaftlichen und pädagogischen Auftrag erfülle.
+                                    Der individuelle Entwicklungsweg mit allen Fähigkeiten, Besonderheiten und Meilensteinen bespreche ich mit den Eltern. 
+                                    Da ich in der Tagespflege alleine arbeite und nicht durch ständige Dokumentationen von den Kindern abgelenkt sein möchte, 
+                                    beschränke ich mich auf das Fotografieren. 
+                                    Diese Bilder übermittle ich dann recht zeitnah, damit die Eltern immer auf dem neuesten Stand sind. 
+                                    Das schafft Vertrauen, macht meine Arbeit in der Kindertagespflege transparent und dient als wundervolle Erinnerung für die Familien.
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Regeln" && (
+                                <div>
+                                    <h5>Regeln und Rituale</h5>
+                                    Regeln und Rituale sind wichtige Orientierungspunkte für Kinder.
+                                    Damit Regeln Sinn haben, Sicherheit und Orientierung geben, kommuniziere ich die Regeln mit den Kindern. 
+                                    Viele Regeln entwickeln und verändern sich und werden wieder gemeinsam mit den Kindern erarbeitet.
+                                    *Wir ziehen die Schuhe aus, wenn wir die Wohnung betreten
+                                    *Wir räumen gemeinsam auf
+                                    *Wir werfen nicht mit Spielzeug
+                                    *Wir hüpfen nicht auf dem Sofa
+                                    *Wir nehmen Rücksicht auf die anderen Kinder
+
+                                    Kleine Tischregeln:
+                                    *wir essen gemeinsam
+                                    *mit Essen wird nicht gespielt
+                                    *gegessen wird nur am Tisch
+                                    *Getränke bleiben im Esszimmer
+                                    Und für die Eltern: Wir bringen die Kinder morgens nicht mit Essen in der Hand.
+
+                                    Rituale gehören zum Alltag, denn durch Wiederholung erhalten die Kinder Sicherheit und Vertrauen.
+                                    –	gemeinsames Essen/ Tischsprüche
+                                    –	geregelte Ruhephasen
+                                    –	Sitzkreis mit Fingerspielen
+                                    –	das pünktliche Bringen und Abholen der Kinder
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Eingewöhnung & Abschied" && (
+                                <div>
+                                    <h5>Eingewöhnung und Abschied</h5>
+
+                                    Eine gute Bindung ist in der Kindertagespflege ein sehr wichtiges Element. 
+                                    Kinder können sich in einer engen Beziehung zu ihren Eltern geschützt entwickeln. Diese Bindung kann das Kind auch zu einer Tagesmutter aufbauen. 
+                                    Die Bindung zu meinen Tageskindern ist mir sehr wichtig. 
+                                    Ich gewöhne nach dem Berliner Eingewöhnungsmodell ein, welches für das Kind eine sanfte und geduldige Methode ist. 
+                                    Eine gute und sanfte Eingewöhnung braucht Zeit, bitte planen Sie dies auch ein. Ich gehe auf jedes Kind individuell ein. 
+                                    Die Zeit der Eingewöhnung kann stark variieren und liegt zwischen 2 und 4 Wochen. 
+                                    Bitte geben Sie Ihrem Kind genug Zeit, Vertrauen zu mir zu fassen und sich wohl zu fühlen. 
+                                    Sie verläuft in mehreren Phasen und ist abgeschlossen, wenn sich das Kind von mir trösten lässt und Bindungsverhalten zeigt.
+                                    Zum Wohle des Kindes richtet sich die Eingewöhnungsphase primär nach den Bedürfnissen des Kindes und nicht der Eltern.
+                                    Sie besuchen zusammen mit ihrem Kind die Tagesmutter möglichst mehrmals in der Woche für ca. 1 Stunde zum Spielen. 
+                                    Anfangs spielen Sie mit. Später halten Sie sich in Sichtweise auf. Gegen Ende der Eingewöhnung verlassen Sie uns für kurze Zeit. 
+                                    Die Abwesenheiten werden verlängert. Sie sollten aber im Notfall erreichbar sein.
+
+                                    Unterstützen können die Eltern die Eingewöhnungszeit, wenn sie folgendes beachten:
+                                    - Die Eltern suchen sich ein "gemütliches Eckchen" im Raum und verhalten sich grundsätzlich passiv.
+                                    - Sie reagieren auf Annäherung und Blickkontakte ihres Kindes positiv - nehmen jedoch von sich aus keinen Kontakt zu ihrem Kind auf.
+                                    - Sie drängen ihr Kind nicht, sich von ihnen zu entfernen oder Bestimmtes zu machen.
+                                    - Sie geben ihrem Kind einen vertrauten Gegenstand mit -Schnuller, Teddy,Schmusedecke, die gewohnte Nuckelflasche,...-.
+                                    Die Eltern sollten sich nicht mit anderen Dingen oder Kindern beschäftigen. 
+                                    Sie sind während der Eingewöhnung ausschließlich der sichere Hafen für ihr Kind.
+
+
+                                    Auch der Abschied aus meiner Kindertagespflegestelle ist für das Kind ein ähnlich einschneidendes Ereignis 
+                                    wie die Eingewöhnung und wird von mir rechtzeitig vorher immer wiederkehrend thematisiert, 
+                                    damit sich sowohl das Kind als auch die Gruppe darauf vorbereiten können. 
+                                    Auch die Eltern sollten das Thema Abschied zeitgleich zu Hause besprechen und planen.
+                                    Am letzten Betreuungstag feiere ich mit den Kindern zusammen ein kleines Abschiedsfest.
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Medikamenteneinnahme" && (
+                                <div>
+                                    <h5>Medikamentengabe</h5>
+                                    Grundsätzlich gebe ich den Kindern keine Medikamente.
+                                    Sollte ein Kind nach einer Krankheit für einen begrenzten Zeitraum medizinisch unvermeidbare Medikamente einnehmen müssen, 
+                                    so benötige ich zwingend eine schriftliche Bescheinigung der Erziehungsberechtigten.
+                                    Bei chronischen und allergischen Erkrankungen sowie bei Fieberkrämpfen ist für eine Medikamentengabe durch mich 
+                                    eine schriftliche Bescheinigung des Kinderarztes unerlässlich.
+                                    Ich richte mich bei Krankheiten nach den allgemeinen Wiederzulassungsrichtlinien und betreue Kinder erst wieder, 
+                                    wenn sie ohne Medikamente 24 Stunden fieberfrei sind und 48 Stunden ohne Durchfall und Erbrechen.
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Zusammenarbeit mit den Eltern" && (
+                                <div>
+                                    <h5>Zusammenarbeit mit den Eltern</h5>
+
+                                    Ohne Eltern geht es nicht. Die Zusammenarbeit mit den Eltern hat für mich einen hohen Stellenwert. Eltern sind für mich direkter Ansprechpartner wenn es darum geht, optimale Entwicklungsbedingungen für ihr Kind zu schaffen, in deren Mittelpunkt die Förderung der kindlichen Entwicklung und die Sicherstellung des Wohls des Kindes stehen. Für das Gelingen einer guten Zusammenarbeit sind Offenheit, Vertrauen und das Einhalten von verbindlichen Absprachen unerlässlich.
+                                    Ich biete jederzeit Elterngespräche an. Durch das Gespräch mit den Eltern kann sich das kindliche Verhalten für mich verdeutlichen und umgekehrt ermöglicht es auch den Eltern einen anderen Blick auf ihr Kind.
+                                    Kurze Infos über den Alltagsablauf erfolgen regelmäßig durch Tür-und-Angel-Gespräche. Mir ist wichtig von bedeutsamen Ereignissen im Elternhaus zu erfahren. So kann ich das Kind besser einschätzen und auf die Bedürfnisse eingehen (z.B. ein erlebnisreiches Wochenende, ein Sturz, eine Erkrankung, Trennung).
+                                    Scheuen Sie sich auch nicht, Bedenken oder Kritik zu äußern, denn nur so können wir Konflikten oder Missverständnissen aus dem Wege gehen.
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Urlaub / Krankheitsfall" && (
+                                <div>
+                                    <h5>Urlaub / Krankheitsfall</h5>
+
+                                    Von Seiten des Tageselternvereins wird empfohlen, dass die Tagesmutter mindestens 30 Tage Urlaub im Jahr nimmt. 
+                                    Die genauen Urlaubstermine werden von mir bis Oktober/November für das Folgejahr bekannt gegeben. 
+                                    Die Eltern werden ebenfalls gebeten, ihren Urlaub rechtzeitig anzukündigen und nach Möglichkeit abzustimmen, 
+                                    damit keine Fremdbetreuung für das Kind nötig wird. Sollte es trotzdem unvermeidbar und absehbar sein, 
+                                    müssen die Eltern sich selbst um eine Kontaktaufnahme und  Eingewöhnung kümmern.Es findet zwischen Weihnachten und Neujahr keine Betreuung statt.
+                                    Im Krankheitsfall meinerseits arbeite ich eng mit einer ortsansässigen Tagesmutter zusammen. 
+                                    Den Eltern wird im Betreuungsvertrag Name und Adresse mitgeteilt. Bei regelmäßigen Treffen haben die Kinder immer wieder zu ihr Kontakt, 
+                                    so dass sie im Ernstfall keine Fremde ist.
+                                    Sollte bei der Ersatztagesmutter kein Platz frei sein, bitte ich die Eltern, sich eigenständig an den Tageselternverein zu wenden.
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Schlafen" && (
+                                <div>
+                                    <h5>Schlafen</h5>
+
+                                    Für die Tageskinder stehen bis zu 3 Kinderbetten und 4 Stapelliegen zur Verfügung. 
+                                    Diese können in maximal 2 Räumen gestellt werden. Diese Räume lassen sich gut abdunkeln. 
+                                    Eines der Schlafräume liegt im Obergeschoss und da hilft uns das Babyphone, immer in Hörweite zu sein. 
+                                    Jedes Kind hat seine eigene Kopfunterlage und Decke.
+                                    Wenn eines der kleineren Kinder während der Spaziergänge im Kinderwagen einschläft, kann es im Treppenhaus weiterschlafen, 
+                                    da die Kinder angeschnallt sind und das Treppenhaus sehr hellhörig ist. 
+                                    Kontrollgänge sind natürlich auch regelmäßig nötig Dies geschieht allerdings nach Rücksprache mit den Eltern.
+
+                                </div>
+                            )
+                        }
+
+                        {
+                            this.state.page === "Allgemeines" && (
+                                <div>
+                                    <h5>Allgemeines</h5>
+                                    –	der Antrag zur Stundenbuchung muss jedes Jahr neu gestellt werden
+                                    –	daran versuche ich rechtzeitig zu erinnern
+                                    –	Windeln und Feuchttücher werden mitgebracht und benutzte Windeln gebe ich auch wieder mit nach Hause
+                                    –	im Treppenhaus steht unser Schnullerbaum → wenn das Kind mag, darf es sich verabschieden und  seinen allerletzten Schnuller an einen Apfel hängen
+                                    –	nach Möglichkeit haben die Kinder ihre Schnuller nur zum Schlafen und nicht im Dauergebrauch
+                                    –	spätestens zum 2. Geburtstag fangen wir mit dem Thema Töpfchen an
+                                    –	hierbei erfordert es unbedingt die Zusammenarbeit mit den Eltern, ansonsten macht es keinen Sinn
+                                    –	Spielsachen und Bücher dürfen ab und an mitgebracht werden, aber es wird keine Garantie gegeben...(bitte hierbei keine gefährlichen Kleinteile)
+                                    –	wettergerechte Kleidung und stabile Schuhe mitgeben, da wir gerne draußen sind/ auch auf Waldwegen
+                                    –	Kinderwagen kann bei Bedarf im Hausflur abgestellt werden
+                                    –	Terminabsprachen/Abmeldungen unbedingt rechtzeitig !
+
+                                </div>
                             )
                         }
 

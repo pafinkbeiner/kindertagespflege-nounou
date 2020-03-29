@@ -1,91 +1,19 @@
 @import '../../variables.scss';
 
-.burger{
-    display: none;
+
+.logo{
+
+    margin-top: 8px;
+    margin-left: 8px;
+    max-height: 5.5em;
+    height: 80%;
+    width:auto;
+
 }
 
-.nav-container{
-    /*Flexbox*/
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: white;
-    width: 100%;
-
-    .logo{
-
-        margin-top: 8px;
-        margin-left: 8px;
-        max-height: 5.5em;
-        height: 80%;
-        width:auto;
+a{
+    &.active{
+        background-color: lightgrey;
     }
-    .logo-link:hover{
-        background-color: white;
-    }
-
-    .navbar-item{
-
-        color: #4a4a4a;
-        padding: 8px;
-        margin-left: 1rem;
-        border:none;
-        background: none;
-        text-align: center;
-        line-height: 100px;
-
-        .active{
-            background-color: rgb(242, 242, 242);
-        }
-    }
-
-    a:hover{
-        background-color: rgb(242, 242, 242);
-        color: #3273dc;
-    }
-}
-
-
-
-@media screen and (max-width: 950px) {
-
-    .burger{
-        display: block;
-    }
-
-    .burger-button{
-        background-color: white;
-        border: none;
-    }
-
-    .burger-button:enabled{
-        background-color: white;
-        border: none;
-        .navbar-item{
-            display: none;
-        }
-    }
-
-
-    .nav-container{
-        /*Flexbox*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: white;
-        width: 100%;
-
     
-        .navbar-item{
-    
-            color: #4a4a4a;
-            padding: 8px;
-            margin-left: 9px;
-            border:none;
-            background: none;
-            text-align: center;
-            line-height: 25px;
-        }
-    
-    }
 }

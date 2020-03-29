@@ -2,10 +2,12 @@ import React from 'react'
 
 import './Page.scss';
 
-class Contact extends React.Component {
+import Eintraege from '../components/Eintraege/Eintraege'
+
+class Guestbook extends React.Component {
 
     componentDidMount(){
-        document.title = "Kontakt";
+        document.title = "Guestbook";
 
         this.state = {
             vorname: "",
@@ -23,14 +25,20 @@ class Contact extends React.Component {
             console.log(this.state);
         }
 
+        const InputForm = {
+            display: "none"
+        }
+
         return (
             <div className="main-container">
     
-                <h3>Kontakt</h3>
-    
+                <h3>Gästebuch</h3>
+
+                <button id="igjr398g38gj" className="btn red darken-4" onClick={() => {document.getElementById("ijge8g43894mek2d9").style.display = ""; document.getElementById("igjr398g38gj").style.display="none"}}>Eintragen</button>
+
                 <br/>
-    
-                  <div className="row">
+
+                  <div style={InputForm} id="ijge8g43894mek2d9" className="row">
                     <form className="col s12" onSubmit={submit}>
                     <div className="row">
                         <div className="input-field col s6">
@@ -52,16 +60,27 @@ class Contact extends React.Component {
                     <div className="row">
                         <div className="input-field col s12">
                         <textarea id="textarea1" className="materialize-textarea" onChange={(e) => this.setState({...this.state,text: e.target.value})}></textarea>
-                        <label htmlFor="textarea1">Nachricht</label>
+                        <label htmlFor="textarea1">Text</label>
                         </div>
                     </div>
+                    <p>
+                    <label>
+                        <input type="checkbox" />
+                        <span>Veröffentlichen</span>
+                    </label>
+                    </p>
 
-                    <br/>
+                    <br/><br/>
 
                     <button className="btn red darken-4">Abschicken</button>
 
                     </form>
                 </div>
+
+                <br/>
+
+                <Eintraege/>
+
             </div>
         )
     }
@@ -69,4 +88,4 @@ class Contact extends React.Component {
 
 }
 
-export default Contact
+export default Guestbook

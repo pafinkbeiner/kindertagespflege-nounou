@@ -15,7 +15,50 @@ const Day = () => {
 
     return (
         <div className="main-container">
-            Day
+
+        <h3>Tagesablauf</h3>
+
+        <br/>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Uhrzeit</th>
+                <th>Tätigkeit</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>7-9 Uhr</td>
+                <td>Bringzeit / Freispiel /Wickeln und Töpfchen</td>
+            </tr>
+            <tr>
+                <td>9-10/ 10:30 Uhr</td>
+                <td>Spaziergang; Spielplatz bei schlechtem Wetter Basteln, Singen, Turnen, angeleitete Spielangebote</td>
+            </tr>
+            <tr>
+                <td>10:30 Uhr</td>
+                <td>Aufräumen, Händewaschen und gemeinsames Vesper</td>
+            </tr>
+            <tr>
+                <td>11 -13 Uhr</td>
+                <td>Schlafenszeit /Essenkochen und Hausaufgabenbetreuung für die Großen</td>
+            </tr>
+            <tr>
+                <td>13 -14 Uhr</td>
+                <td>Wickeln, Töpfchen und Mittagessen</td>
+            </tr>
+            <tr>
+                <td>14 - 15 Uhr</td>
+                <td>Abholzeit</td>
+            </tr>
+            <tr>
+                <td>ab   15 Uhr</td>
+                <td>Freispiel bis zum Abholen</td>
+            </tr>
+            </tbody>
+        </table>
         </div>
     )
 }

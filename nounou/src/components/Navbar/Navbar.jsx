@@ -25,6 +25,14 @@ const NavbarContent = [
         path: "/Day"
     },
     {
+        name: "Urlaubsplan",
+        path: "Holidays"
+    },
+    {
+        name: "Gästebuch",
+        path: "Guestbook"
+    },
+    {
         name: "Kontakt",
         path: "/Contact"
     }
@@ -32,16 +40,18 @@ const NavbarContent = [
 
 const Navbar = () => {
     return (
-        <nav className="nav-container">
-
+        <nav>
+            <div className="nav-wrapper white">
             <Link className="logo-link" to="Home">
                 <img className="logo" src={logo} alt="logo"/>
             </Link>
 
-            {NavbarContent.map(item => {
-                return <NavLink className="navbar-item" to={item.path}>{item.name}</NavLink>
-            })}
-
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
+                {NavbarContent.map(item => {
+                    return <li><NavLink className="black-text" to={item.path}>{item.name}</NavLink></li>
+                })}
+            </ul>
+            </div>
         </nav>
     )
 }

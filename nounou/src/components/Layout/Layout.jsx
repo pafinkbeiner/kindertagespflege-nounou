@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 //Components
 import Navbar from '../Navbar/Navbar';
@@ -14,9 +14,11 @@ import About from '../../pages/About';
 import Day from '../../pages/Day';
 import Contact from '../../pages/Contact';
 import Rooms from '../../pages/Rooms';
+import Datenschutz_l from '../../pages/Datenschutz_l';
 
 //SCSS
 import '../Layout/Layout.scss'
+
 
 const Layout = () => {
     return (
@@ -32,6 +34,7 @@ const Layout = () => {
                     <Route exact path="/Rooms" component={Rooms} />
                     <Route exact path="/Impressum" component={Impressum} />
                     <Route exact path="/Datenschutz" component={Datenschutz} />
+                    <Route exact path="/Datenschutz_l" component={Datenschutz_l} />
                 </div> 
                 <Footer/>
             </div>

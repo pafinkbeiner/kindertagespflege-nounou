@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 //Ressources
 import logo from '../Navbar/logo.png';
@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
 
             {NavbarContent.map(item => {
-                return <Link className="navbar-item" to={item.path}>{item.name}</Link>
+                return <NavLink className="navbar-item" to={item.path}>{item.name}</NavLink>
             })}
 
         </nav>

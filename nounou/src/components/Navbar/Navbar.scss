@@ -33,6 +33,10 @@
         background: none;
         text-align: center;
         line-height: 100px;
+
+        .active{
+            background-color: rgb(242, 242, 242);
+        }
     }
 
     a:hover{

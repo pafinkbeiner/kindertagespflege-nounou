@@ -63,10 +63,50 @@ class Home extends React.Component {
                                     <br/><br/>
                                     <div className="row">
                                         <div className="col s6">
-                                            Telefon
+                                            Telefonnummer
+                                            <br/>
+                                        <table>
+
+                                                <tbody>
+                                                <tr>
+                                                    <td>07441 / 951828</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                         <div className="col s6">
                                             Öffnungszeiten
+                                            <table>
+                                                <thead>
+                                                <tr>
+                                                    <th>Tag</th>
+                                                    <th>Zeit</th>
+                                                </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                <tr>
+                                                    <td>Montag</td>
+                                                    <td>6 - 18 Uhr</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dienstag</td>
+                                                    <td>6 - 18 Uhr</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mittwoch</td>
+                                                    <td>6 - 18 Uhr</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Donnerstag</td>
+                                                    <td>6 - 18 Uhr</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Freitag</td>
+                                                    <td>6 - 18 Uhr</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>

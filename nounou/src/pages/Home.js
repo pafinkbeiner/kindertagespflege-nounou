@@ -48,10 +48,6 @@ class Home extends React.Component {
                                     
                                     <br/>
 
-                                    Oder brauchen Sie eventuell eine Betreuung in den Ferien oder an Schließtagen der öffentlichen Einrichtung?
-                                    
-                                    <br/>
-
                                     Dann sind Sie bei uns genau richtig!
             
                                     <br/>

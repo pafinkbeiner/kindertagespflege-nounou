@@ -35,7 +35,7 @@ const Layout = () => {
                             <Route path="/Day" component={Day} />
                             <Route path="/Contact" component={Contact} />
                             <Route path="/Rooms" component={Rooms} />
-                            <Route path="/Guestbook" component={Guestbook} />
+                            {/*<Route path="/Guestbook" component={Guestbook} />*/}
                             <Route path="/Holidays" component={Holidays} />
                             <Route path="/Impressum" component={Impressum} />
                             <Route path="/Datenschutz" component={Datenschutz} />

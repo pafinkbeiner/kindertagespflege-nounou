@@ -27,6 +27,46 @@ class Contact extends React.Component {
             <div className="main-container">
     
                 <h3>Kontakt</h3>
+
+                <div className="row">
+                    <div className="col s6">
+                        
+                    <b>Telefonnummer</b>
+                    <br/>
+                    <table>
+
+                    <tbody>
+                        <tr>
+                            <td>07441 / 951828</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <br/>
+                    <b>Adresse</b>
+                    <br/>
+                    <table>
+
+                    <tbody>
+                        <tr>
+                            <td>Alfredstraße 67
+                                <br/>
+                                72250 Freudenstadt
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                        
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    </div>
+                    <div className="col s6">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d935.3759035735809!2d8.408487129995715!3d48.463387008235905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x479734451fa8bf5b%3A0x684bc25758c81d06!2sAlfredstra%C3%9Fe+67%2C+72250+Freudenstadt!3m2!1d48.4635423!2d8.409170099999999!4m0!5e0!3m2!1sde!2sde!4v1563221952535!5m2!1sde!2sde" width="100%" height="300" frameborder="0"  allowfullscreen></iframe>
+
+                    </div>
+                </div>
     
                 <br/>
     
@@ -62,6 +102,10 @@ class Contact extends React.Component {
 
                     </form>
                 </div>
+                
+
+
+
             </div>
         )
     }

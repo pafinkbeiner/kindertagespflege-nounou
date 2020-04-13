@@ -12,8 +12,15 @@
 }
 
 a{
+
+    &:hover{
+        background-color: #b34b4b88 !important;
+        color: black !important;
+    }
+
     &.active{
-        background-color: lightgrey;
+        background-color: #610505 !important;
+        color: white !important;
     }
     
 }

@@ -27,11 +27,11 @@ const NavbarContent = [
     {
         name: "Urlaubsplan",
         path: "Holidays"
-    },
+    }/*,
     {
         name: "Gästebuch",
         path: "Guestbook"
-    },
+    }*/,
     {
         name: "Kontakt",
         path: "/Contact"

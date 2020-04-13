@@ -19,7 +19,6 @@ class Home extends React.Component {
         "Medikamenteneinnahme", 
         "Zusammenarbeit mit den Eltern",
         "Urlaub / Krankheitsfall",
-        "Schlafen",
         "Allgemeines"
     ];
 
@@ -42,7 +41,7 @@ class Home extends React.Component {
                                 <div>
                                     <h4>Herzlich Willkommen bei Kindertagespflege Nounou</h4>
                                     <p>
-                                    Sie sind auf der Suche nach einer Einrichtung, die sich liebevoll um Ihr
+                                    Sie sind auf der Suche nach einer Tagesmutter, die sich liebevoll um Ihr
             
                                     Kind kümmert, es individuell und vielseitig fördert? 
                                     
@@ -216,6 +215,8 @@ class Home extends React.Component {
                                     <br/>Wie in der Kindertagesstätte beteiligen sich die Eltern und zahlen entweder an das Jugendamt oder an die Tagespflegeperson.
                                     <br/>Seit dem 1. August 2013 besteht für alle Kinder ab einem Jahr ein Rechtsanspruch auf einen Kinderbetreuungsplatz in einer 
                                     <br/>Kindertageseinrichtung oder in Kindertagespflege. Der Rechtsanspruch kann eingeklagt werden.
+                                    <br/><br/><br/><br/><br/>
+                                    <img src="https://tev-fds.de/templates/yoo_master2/styles/tev/images/banner.jpg" alt="logo tageselternverein"/>
                                 </div>
                             )
                         }
@@ -410,23 +411,6 @@ class Home extends React.Component {
                                     <br/>Den Eltern wird im Betreuungsvertrag Name und Adresse mitgeteilt. Bei regelmäßigen Treffen haben die Kinder immer wieder zu ihr Kontakt, 
                                     <br/>so dass sie im Ernstfall keine Fremde ist.
                                     <br/>Sollte bei der Ersatztagesmutter kein Platz frei sein, bitte ich die Eltern, sich eigenständig an den Tageselternverein zu wenden.
-
-                                </div>
-                            )
-                        }
-
-                        {
-                            this.state.page === "Schlafen" && (
-                                <div>
-                                    <h5>Schlafen</h5>
-
-                                    Für die Tageskinder stehen bis zu 3 Kinderbetten und 4 Stapelliegen zur Verfügung. 
-                                    <br/>Diese können in maximal 2 Räumen gestellt werden. Diese Räume lassen sich gut abdunkeln. 
-                                    <br/>Eines der Schlafräume liegt im Obergeschoss und da hilft uns das Babyphone, immer in Hörweite zu sein. 
-                                    <br/>Jedes Kind hat seine eigene Kopfunterlage und Decke.
-                                    <br/>Wenn eines der kleineren Kinder während der Spaziergänge im Kinderwagen einschläft, kann es im Treppenhaus weiterschlafen, 
-                                    <br/>da die Kinder angeschnallt sind und das Treppenhaus sehr hellhörig ist. 
-                                    <br/>Kontrollgänge sind natürlich auch regelmäßig nötig Dies geschieht allerdings nach Rücksprache mit den Eltern.
 
                                 </div>
                             )

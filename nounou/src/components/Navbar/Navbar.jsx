@@ -51,6 +51,7 @@ const Navbar = () => {
                     return <li><NavLink className="black-text" to={item.path}>{item.name}</NavLink></li>
                 })}
             </ul>
+
             </div>
         </nav>
     )
